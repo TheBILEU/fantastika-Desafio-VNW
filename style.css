@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* -------------------------- */
+
+/* HEADER START */
+
+header {
+  background-color: #252525;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+
+header .logo h2 {
+  color: white;
+}
+
+header .logo {
+  display: flex;
+  width: 8.5vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10vw;
+}
+
+header img {
+  width: 40px;
+}
+
+/* HEADER END */
+
+/* -------------------------- */
+
+/* MAIN START */
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+main .container-main_pinkDog {
+  background: url(assets/dogPink.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 120vh;
+}
+
+main .pinkDog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 60vh;
+}
+
+main .pinkDog h1 {
+  font-size: 80px;
+  color: white;
+}
+
+main .pinkDog img {
+  width: 150px;
+  margin-top: 50px;
+}
+
+main .background {
+  background-color: #f4f2f3;
+  background: url(assets/dogCostume.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+  background-position: bottom center;
+}
+
+main .container-main_dogCostume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
+}
+
+main .dogCostume {
+  width: 30vw;
+}
+
+main .dogCostume h1 {
+  color: #3a342f;
+  font-size: 70px;
+}
+
+main .dogCostume p {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+main .dogCostume .info {
+  margin-top: 20px;
+}
+
+main .dogCostume button {
+  margin-top: 30px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #3a342f;
+  padding: 10px;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+}
+
+main .dogCostume a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+main .background2 {
+  background: url(assets/dogCute.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+  background-position: bottom center;
+}
+
+main .container-main_dogCute {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 70vw;
+  height: 100vh;
+}
+
+main .dogCute h1 {
+  color: #ffffff;
+  font-size: 49px;
+}
+
+main .dogCute p {
+  color: #ffffff;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+main .dogCute .info {
+  margin-top: 20px;
+}
+
+main .dogCute button {
+  margin-top: 30px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+  padding: 10px;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+}
+
+main .dogCute a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main .container3 {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .support {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+}
+
+main .support p {
+  color: #fd6a9a;
+  font-size: 24px;
+}
+
+main .imagens-support {
+  display: flex;
+  width: 25vw;
+  justify-content: space-between;
+}
+/* MAIN END */
+
+/* -------------------------- */
+
+/* FOOTER START */
+
+.background3 {
+  background-color: #eb4a7b;
+  height: 30vh;
+}
+
+.container-footer {
+  display: flex;
+  width: 40vw;
+  height: 30vh;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content h1 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.content h5 {
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.footer-div {
+  display: none;
+}
+
+/* FOOTER END */
+
+/* -------------------------- */
+
+/* MEDIA START */
+@media (max-width: 700px) {
+  header .logo {
+    width: 40vw;
+  }
+
+  header nav img:first-child {
+    display: none;
+  }
+
+  header nav img:nth-child(2) {
+    display: none;
+  }
+
+  /*  */
+
+  main .container-main_pinkDog {
+    height: 50vh;
+  }
+
+  main .pinkDog {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  main .pinkDog h1 {
+    font-size: 20px;
+    color: white;
+  }
+
+  main .pinkDog img {
+    width: 60px;
+    margin-bottom: 120px;
+  }
+
+  main .background {
+    height: 50vh;
+    background-position: bottom center;
+  }
+
+  main .container-main_dogCostume {
+    margin-left: 5px;
+    width: 60vw;
+    height: 50vh;
+  }
+
+  main .dogCostume {
+    width: 60vw;
+    height: 40vh;
+  }
+
+  main .dogCostume h1 {
+    color: #3a342f;
+    font-size: 25px;
+  }
+
+  main .dogCostume p {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  main .dogCostume .info {
+    margin-top: 00px;
+  }
+
+  main .background2 {
+    height: 50vh;
+  }
+
+  main .container-main_dogCute {
+    width: 99vw;
+    height: 50vh;
+  }
+
+  main .dogCute h1 {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  main .dogCute p {
+    color: #ffffff;
+    font-size: 15px;
+  }
+
+  main .container3 {
+    height: 25vh;
+  }
+
+  main .support {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  main .imagens-support {
+    width: 70vw;
+    margin: 10px;
+    display: flex;
+  }
+
+  main .imagens-support img {
+    margin: 10px;
+  }
+
+  main .support p {
+    color: #fd6a9a;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  /*  */
+
+  .background3 {
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .footer-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 20vh;
+    justify-content: space-around;
+  }
+
+  .footer-div .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-div .logo h2 {
+    margin-left: 5px;
+    color: white;
+  }
+
+  .footer-div .logo img {
+    width: 50px;
+  }
+
+  .footer-div .redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+  }
+
+  .container-footer {
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    flex-direction: column;
+  }
+
+  .content h1 {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .content h5 {
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+  }
+}
+/* MEDIA END */
